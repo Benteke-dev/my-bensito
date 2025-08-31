@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal Portfolio Website" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">MyPortfolio</h1>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <button id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Benjamin</span></h1>
+            <p>Web Developer | UI/UX Designer | Freelancer</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate web developer with expertise in building
+            responsive and interactive websites. I love solving problems
+            and creating designs that enhance user experience.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Modern, clean, and responsive designs tailored to your needs.</p>
+            </div>
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Fast, optimized, and scalable websites for your business.</p>
+            </div>
+            <div class="card">
+                <h3>SEO Optimization</h3>
+                <p>Boost your website's ranking and visibility online.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>My Projects</h2>
+        <div class="gallery">
+            <div class="item">Project 1</div>
+            <div class="item">Project 2</div>
+            <div class="item">Project 3</div>
+            <div class="item">Project 4</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="formStatus"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 MyPortfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
